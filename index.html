@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <header></header> -->
+      <header>
+        <img src="images/plant.svg" alt="" />
+        <form name="search">
+          <div class="input_wrapper">
+            <input
+              class="search_input"
+              type="text"
+              placeholder="What are you looking for?"
+            />
+            <button class="search_button">
+              <img src="images/search.svg" alt="" />
+            </button>
+          </div>
+        </form>
+        <div class="navbar_right">
+          <button class="login_button">LOG IN</button>
+          <button class="cart_button">
+            <img src="images/cart.svg" alt="" />
+          </button>
+        </div>
+      </header>
+      <!-- <section></section> -->
+      <section>
+        <form class="section_form">
+          <h2>CONTACT US</h2>
+          <div class="contact_info">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+          </div>
+          <fieldset>
+            <h3>I have a delivery question about my order</h3>
+            <div class="radio_wrapper">
+              <input type="radio" name="order" id="answer1" />
+              <label for="answer1" class="label"
+                >"I did not receive my order"</label
+              >
+            </div>
+            <div class="radio_wrapper">
+              <input type="radio" name="order" id="answer2" />
+              <label for="answer2" class="label"
+                >My order is incorrect or arrived damaged</label
+              >
+            </div>
+            <div class="radio_wrapper">
+              <input type="radio" name="order" id="answer3" />
+              <label for="answer3" class="label">Cancel my order</label>
+            </div>
+            <div class="radio_wrapper">
+              <input type="radio" name="order" id="answer4" />
+              <label for="answer4" class="label"
+                >Change my shipping address</label
+              >
+            </div>
+          </fieldset>
+          <h3>Please provide more details below.</h3>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Message"
+          ></textarea>
+          <div class="checkbox_container">
+            <input id="checkbox" type="checkbox" />
+            <label class="checkbox_label" for="checkbox"
+              >I want to receive the newsletter
+            </label>
+          </div>
+          <button class="send_button" type="submit">SEND</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

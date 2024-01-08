@@ -1,0 +1,134 @@
+.container {
+  width: min(100%, 1440px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+/* header */
+header {
+  background-color: #2e0230;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 72px;
+}
+
+.input_wrapper {
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid rgba(176, 82, 181, 0.79);
+  box-shadow: 0px -2px 5px 0px #f1acee;
+  width: 560px;
+  height: 48px;
+}
+.search_input {
+  background-color: inherit;
+  width: 100%;
+  padding-left: 16px;
+}
+.search_button {
+  border: none;
+  background-color: #b052b5;
+  color: white;
+  width: 48px;
+  border-radius: 0px 8px 8px 0px;
+}
+.navbar_right {
+  display: flex;
+  gap: 8px;
+}
+.login_button {
+  background-color: inherit;
+  border-radius: 8px;
+  border: 1px solid #f30aea;
+  padding: 8px 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 16px;
+  color: white;
+}
+.cart_button {
+  padding: 13px;
+  border-radius: 8px;
+  background: #f30aea;
+}
+/* section */
+section {
+  background-image: url("../images/cover.png");
+  padding: 64px 288px;
+}
+.section_form {
+  border-radius: 20px;
+  border: 1px solid rgba(176, 82, 181, 0.79);
+  background: rgba(28, 19, 37, 0.8);
+  backdrop-filter: blur(5px);
+  width: 864px;
+  padding: 48px 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.radio_wrapper {
+  color: #b052b5;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: white;
+}
+#message {
+  height: 75px;
+  width: 464px;
+  resize: none;
+}
+h2 {
+  color: #fff;
+  text-shadow: 2px 4px 4px rgba(249, 12, 239, 0.71);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.contact_info {
+  margin-top: 80px;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.contact_info input {
+  border-radius: 8px;
+  border: 1px solid #b052b5;
+  background-color: inherit;
+  padding: 11px 149px 11px 22px;
+  width: 220px;
+}
+.checkbox_label {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.send_button {
+  border-radius: 16px;
+  background: #f30aea;
+  padding: 19px 210px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  margin-top: 40px;
+}
+fieldset{
+  margin-bottom: 26px;
+}
+.checkbox_container{
+  margin-top: 24px;
+}
