@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+  
   </head>
   <body>
     <div class="container">
@@ -15,11 +16,13 @@
         <form name="search">
           <div class="input_wrapper">
             <input
+              name="search"
+              id="search"
               class="search_input"
               type="text"
               placeholder="What are you looking for?"
             />
-            <button class="search_button">
+            <button type="submit" class="search_button">
               <img src="images/search.svg" alt="" />
             </button>
           </div>
@@ -36,38 +39,62 @@
         <form class="section_form">
           <h2>CONTACT US</h2>
           <div class="contact_info">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <input type="text" name="email" id="email" placeholder="Email" />
           </div>
           <fieldset>
-            <h3>I have a delivery question about my order</h3>
+            <h3 class="radio_text">
+              I have a delivery question about my order
+            </h3>
+            <div class="radio_div">
             <div class="radio_wrapper">
-              <input type="radio" name="order" id="answer1" />
+              <input
+                type="radio"
+                name="order"
+                id="answer1"
+                value="I did not receive my order"
+              />
               <label for="answer1" class="label"
-                >"I did not receive my order"</label
+                > I did not receive my order</label
               >
-            </div>
+            </div >
             <div class="radio_wrapper">
-              <input type="radio" name="order" id="answer2" />
+              <input
+                type="radio"
+                name="order"
+                id="answer2"
+                value="My order is incorrect or arrived damaged"
+              />
               <label for="answer2" class="label"
-                >My order is incorrect or arrived damaged</label
+                > My order is incorrect or arrived damaged</label
               >
             </div>
             <div class="radio_wrapper">
-              <input type="radio" name="order" id="answer3" />
-              <label for="answer3" class="label">Cancel my order</label>
+              <input
+                type="radio"
+                name="order"
+                id="answer3"
+                value="Cancel my order"
+              />
+              <label for="answer3" class="label"> Cancel my order</label>
             </div>
             <div class="radio_wrapper">
-              <input type="radio" name="order" id="answer4" />
+              <input
+                type="radio"
+                name="order"
+                id="answer4"
+                value="Change my shipping address"
+              />
               <label for="answer4" class="label"
-                >Change my shipping address</label
+                > Change my shipping address</label
               >
             </div>
+          </div>
           </fieldset>
           <h3>Please provide more details below.</h3>
           <textarea
-            id="message"
-            name="message"
+            id="textarea"
+            name="textarea"
             placeholder="Message"
           ></textarea>
           <div class="checkbox_container">
